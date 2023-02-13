@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>promise</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Oswald:300,400" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg navBar" id="navBar">
+    <div class="container-fluid mv-100" style="height: 75px; background-color: aqua;">
+      <a class="navbar-brand" style="color: black;" href="#">PROMİSE</a>
+      <button class="navbar-toggler w-25" type="button" style="height: 70px;" data-bs-toggle="collapse"
+        data-bs-target="#navbarId" aria-controls="navbarId" aria-expanded="false" aria-label="Toggle navigation">
+        Menü <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse d-flex" id="navbarId">
+        <ul class="navbar-nav me-2 mb-2 ml-auto w-50 ">
+          <li class="nav-item">
+            <a class="home p-2 fs-2" aria-current="page" style="color: black;" href="index.html">ANA SAYFA</a>
+          </li>
+          <li class="nav-item">
+            <a class="membership p-2" style="color: black;" href="uye.html">ÜYELİK</a>
+          </li>
+          <li class="nav-item">
+            <a class="write p-2" style="color: black;" href="uret.html">ÜRET</a>
+          </li>
+          <li class="nav-item">
+            <a class="sign-in p-2" style="color: black;" href="register.html">KAYIT OL</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" href="#">oturum aç</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- header section -->
+  <section class="giris" style="height: 50vh;">
+    <div class="container h-100" style="width: 500px;">
+      <div class="header-text">
+        <h1 class="text">Desire to learn</h1>
+        <div class="main">Discover stories, thinking, and expertise from writers on any topic.</div>
+        <button class="btn pb-3" href="#">hemen simdi başla</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- trending  -->
+  <section class="trending">
+    <div class="container">
+      <div class="trend-icon">
+        <i class="fa-solid fa-chart-simple"></i>
+        <div style="padding-left: 8px; font-size: 20px;">Promise Trendleri</div>
+      </div>
+
+      <div class="content">
+
+        <div class="row">
+          <main id="main" class="col-md-4">
+            <div class="card mb-3" style="max-width: 360px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <a class="person">
+                    <div class="person-image">
+                      <img src="	https://miro.medium.com/fit/c/20/20/1*RdXCTlLaFdzgnzNkA0KDNg.jpeg"
+                        style="border-radius: 50%; margin-right: 10px;" alt="...">
+                      <div>Kenny Kuykendall</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">What You Probably Don’t Know About Your Pastor When He Preaches</h5>
+                    <p class="card-text"><small class="text-muted">dec16.2022 . 3 min read</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <main id="main" class="col-md-4">
+            <div class="card mb-3" style="max-width: 360px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <a class="person">
+                    <div class="person-image">
+                      <img src="	https://miro.medium.com/fit/c/20/20/1*5D9oYBd58pyjMkV_5-zXXQ.jpeg"
+                        style="border-radius: 50%; margin-right: 10px;" alt="...">
+                      <div>Christopher Clemmons in Level Up Coding</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+                    <p class="card-text"><small class="text-muted">dec16.2022 . 3 min read</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <main id="main" class="col-md-4">
+            <div class="card mb-3" style="max-width: 360px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <a class="person">
+                    <div class="person-image">
+                      <img src="	https://miro.medium.com/fit/c/20/20/1*CJe3891yB1A1mzMdqemkdg.jpeg"
+                        style="border-radius: 50%; margin-right: 10px;" alt="...">
+                      <div>Natassha Selvaraj in Towards Data Science</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                    <p class="card-text"><small class="text-muted">dec16.2022 . 3 min read</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+        </div>
+
+        <div class="row">
+          <main id="main" class="col-md-4">
+            <div class="card mb-3" style="max-width: 360px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <a class="person">
+                    <div class="person-image">
+                      <img src="	https://miro.medium.com/fit/c/20/20/0*5UCuQBDPhqlcOcoz.jpeg"
+                        style="border-radius: 50%; margin-right: 10px;" alt="...">
+                      <div>Scott Belsky</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing.</h5>
+                    <p class="card-text"><small class="text-muted">dec16.2022 . 3 min read</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <main id="main" class="col-md-4">
+            <div class="card mb-3" style="max-width: 360px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <a class="person">
+                    <div class="person-image">
+                      <img src="	https://miro.medium.com/fit/c/20/20/1*oTq5RWcSwzoDiuAO_OBhaw.jpeg"
+                        style="border-radius: 50%; margin-right: 10px;" alt="...">
+                      <div>Dr. Tom Frieden</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing.</h5>
+                    <p class="card-text"><small class="text-muted">dec16.2022 . 3 min read</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <main id="main" class="col-md-4">
+            <div class="card mb-3" style="max-width: 360px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <a class="person">
+                    <div class="person-image">
+                      <img src="https://miro.medium.com/fit/c/20/20/0*5UCuQBDPhqlcOcoz.jpeg"
+                        style="border-radius: 50%; margin-right: 10px;" alt="...">
+                      <div>person name</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing. </h5>
+                    <p class="card-text"><small class="text-muted">dec16.2022 . 3 min read</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- trending  -->
+
+  <!-- blog -->
+  <section class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+
+          <div class="blog-person">
+            <a href="#">
+              <div>
+                <img src="img/blog1.jpg">
+              </div>
+            </a>
+            <div class="person-name">
+              <a href="#" style="color: black;">
+                <h4>
+                  cassie kontka
+                </h4>
+              </a>
+            </div>
+            <div class="blog-name">
+              <a href="blog-single.html">
+                <h2>the best new years resolutions you can make</h2>
+              </a>
+              <br>
+              <div class="reading">
+                <h3>dec28,2022</h3>
+                <span style="margin-left: -9px; padding-right: 8px; padding-bottom: 10px;">.</span>
+                <span style="  font-weight: 400;">9 min read</span>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+
+              <div class="blog-img">
+                <img src="img/blog2.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-person">
+            <a href="#">
+              <div>
+                <img src="img/blog1.jpg">
+              </div>
+            </a>
+            <div class="person-name">
+              <a href="#" style="color: black;">
+                <h4>
+                  cassie kontka
+                </h4>
+              </a>
+            </div>
+            <div class="blog-name">
+              <a href="blog-single.html">
+                <h2>the best new years resolutions you can make</h2>
+              </a>
+              <br>
+              <div class="reading">
+                <h3>dec28,2022</h3>
+                <span style="margin-left: -9px; padding-right: 8px; padding-bottom: 10px;">.</span>
+                <span style="  font-weight: 400;">9 min read</span>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+
+              <div class="blog-img">
+                <img src="img/blog2.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-person">
+            <a href="#">
+              <div>
+                <img src="img/blog1.jpg">
+              </div>
+            </a>
+            <div class="person-name">
+              <a href="#" style="color: black;">
+                <h4>
+                  cassie kontka
+                </h4>
+              </a>
+            </div>
+            <div class="blog-name">
+              <a href="blog-single.html">
+                <h2>the best new years resolutions you can make</h2>
+              </a>
+              <br>
+              <div class="reading">
+                <h3>dec28,2022</h3>
+                <span style="margin-left: -9px; padding-right: 8px; padding-bottom: 10px;">.</span>
+                <span style="  font-weight: 400;">9 min read</span>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+
+              <div class="blog-img">
+                <img src="img/blog2.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-person">
+            <a href="#">
+              <div>
+                <img src="img/blog1.jpg">
+              </div>
+            </a>
+            <div class="person-name">
+              <a href="#" style="color: black;">
+                <h4>
+                  cassie kontka
+                </h4>
+              </a>
+            </div>
+            <div class="blog-name">
+              <a href="blog-single.html">
+                <h2>the best new years resolutions you can make</h2>
+              </a>
+              <br>
+              <div class="reading">
+                <h3>dec28,2022</h3>
+                <span style="margin-left: -9px; padding-right: 8px; padding-bottom: 10px;">.</span>
+                <span style="  font-weight: 400;">9 min read</span>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+
+              <div class="blog-img">
+                <img src="img/blog2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="col-md-4" id="categories">
+          <div class="container" style="position: sticky; top: 107px;">
+            <div class="categories-header">
+              <div class="c-name">
+                <p style="font-weight: 700;">Sizin için önemli olan şeylerin daha fazlaasını keşfedin</p>
+                <a href="#">
+                  <div class="categorie">
+                    <p>Programlama</p>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="categorie">
+                    <p>Veri Bilimi</p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="categorie">
+                    <p>Teknoloji</p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="categorie">
+                    <p>Öz Gelişim</p>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="categorie">
+                    <p>Yazılar</p>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="categorie">
+                    <p>İlişkiler</p>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="categorie">
+                    <p>Makine Öğrenme</p>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="categorie">
+                    <p>Üretkenlik</p>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="categorie">
+                    <p>Politika</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="categories-footer">
+                 <div class="item">
+                  <a href="" style="color: rgb(87, 85, 85);"><p>help</p></a>
+                 </div>
+                 <div class="item">
+                  <a href="" style="color: rgb(87, 85, 85);" ><p>status</p></a>
+                 </div>
+                 <div class="item">
+                  <a href="" style="color: rgb(87, 85, 85);"><p>writers</p></a>
+                 </div>
+                 <div class="item">
+                  <a href="" style="color: rgb(87, 85, 85);"><p>blog</p></a>
+                 </div>
+                 <div class="item">
+                  <a href="" style="color: rgb(87, 85, 85);"><p>careers</p></a>
+                 </div>
+                 <div class="item">
+                  <a href="" style="color: rgb(87, 85, 85);"><p>privacy</p></a>
+                 </div>
+                 <div class="item">
+                  <a href="" style="color: rgb(87, 85, 85);"><p>terms</p></a>
+                 </div>
+                 <div class="item">
+                  <a href="" style="color: rgb(87, 85, 85);"><p>about</p></a>
+                 </div>
+                 <div class="item">
+                  <a href="" style="color: rgb(87, 85, 85);"><p>text to speech</p></a>
+                 </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <button class="to-top">
+      <i class="fa-sharp fa-solid fa-chevron-up"></i>
+  </button>
+<script src="js/top-scroll.js"></script>
+</body>
+
+</html>

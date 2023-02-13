@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
+div.dialog {
+    animation: 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal forwards running k2;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+div.dialog-container {
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 0;
+}
+
+div.container {
+    background: #ffffff;
+    box-shadow: rgb(0 0 0 / 15%) 0px 6px 12px;
+    width: 680px;
+    height: 90vh;
+    border-radius: 20px;
+    position: relative;
+    display: block;
+}
+
+div.welcome {
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+
+div.content {
+    margin-top: 10rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    flex-direction: column;
+    width: 40rem;
+}
+
+h2{
+    position: relative;
+    top: 120px;
+    left: -8px;
+    letter-spacing: 0.9px;
+    line-height: 32px;
+    font-size: 29px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+div.google {
+    position: relative;
+    left: 5px;
+    font-family: 'Merriweather', serif;
+    width: 260px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 1.5em;
+    padding: 10px 15px 11px 18px;
+    font-size: 16px;
+    color:  rgb(66, 64, 64);
+    margin-bottom: 18px;
+}
+
+div.facebook {
+    position: relative;
+    left: 5px;
+    font-family: 'Merriweather', serif;
+    width: 260px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 1.5em;
+    padding: 10px 15px 11px 18px;
+    font-size: 16px;
+    color:  rgb(66, 64, 64);
+    margin-bottom: 18px;
+}
+
+div.email {
+    position: relative;
+    left: 5px;
+    font-family: 'Merriweather', serif;
+    width: 260px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 1.5em;
+    padding: 14px 15px 11px 18px;
+    font-size: 16px;
+    color: rgb(66, 64, 64);
+    margin-bottom: 18px;
+}
+
+div.google:hover, div.facebook:hover, div.email:hover {
+    border-color: rgb(63, 62, 62);
+}
+
+div.account {
+    font-size: 19px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(41, 41, 41, 1);   
+    margin-top: 25px;
+}
+
+div.account > p > a {
+    color: rgb(8, 101, 8)
+}
+
+div.warning {
+    display: block;
+   padding: 50px 0 10px 96px;
+  font-size: 13px;
+  color: rgba(117, 117, 117, 1);
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+div.close > button {
+    position: relative;
+    left: 39rem;
+    bottom:36rem;
+    width: 32px; 
+    height: 32px;
+    background-color: #ffffff;
+    border: 1px solid #ffff;
+    cursor: pointer;
+}
