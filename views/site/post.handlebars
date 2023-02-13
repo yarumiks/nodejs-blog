@@ -1,0 +1,133 @@
+  <body>
+
+    <section id="single-post">
+      <div class="container">
+        <main>
+          <div class="1">
+              <div class="post">
+                <div class="post-c">
+                  <div class="c-content">
+                    <article>
+                      <header>
+                        <div class="person-nav">
+                          <div class="person">
+                            <div class="p-img">
+                              <a href="" class="pn">
+                                <img src="/img/273-2738704_user-login-png-transparent-logo-twitter-blanco-png.png" alt="">
+                              </a>
+                            </div>
+                            <div id="person-details">
+                            <div class="p-name">
+                               <a href="">{{post.author.firstname}} {{post.author.lastname}}</a>
+                            </div>
+                            <div class="date">
+                              <p>{{generateDate post.date 'MMM/DD/YYYY' }}</p>
+                              <div id="Resp" style="display: flex;">
+                                <span class="resp1">.</span>
+                                <div id="k">3 min read</div>
+                                <span class="resp2">.</span>
+                              </div>
+                              <div class="listen">
+                                <button class="p" type="button">
+                                  <i class="fa-solid fa-music"></i>
+                                  <p>listen</p>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="person-contact">
+                              <div class="connect">
+                                <div class="social-media">
+                                  <div class="twitter2">
+                                    <a href="">
+                                      <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                  </div>
+                                  <div class="facebook2">
+                                    <a href="">
+                                      <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                  </div>
+                                  <div class="linkedin2">
+                                    <a href="">
+                                      <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                  </div>
+                                  <div class="copy-link2">
+                                    <a href="">
+                                      <i class="fa-solid fa-link"></i>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </header>
+
+                      <section class="post-details">
+                        <div class="p-container">
+                           <div class="title">
+                            <h2>{{post.title}}</h2>
+                           </div>
+                           <figure>
+                            <div>
+                             <a href="">
+                              <img  src="{{post.postImg}}"  alt="">
+                             </a>
+                             </div>
+                           </figure>
+                           <div class="single-content">
+                            <p>{{post.content}}</p>
+                           </div>
+                        </div>
+                      </section>
+                    </article>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </main>
+        <aside class="f-aside">
+             <div class="dh-bf">
+              <div class="m-sy">
+                <div class="sz-ab-rn">
+                  <div class="1-ad">
+                    <div class="person-k">
+                      <a href="" class="pn">
+                        <img src="/img/273-2738704_user-login-png-transparent-logo-twitter-blanco-png.png" alt="">
+                      </a>
+                      <div class="p-m">
+                        <a href="" style="color: rgb(26, 26, 26);">
+                          <h2>
+                            <span>{{post.author.firstname}} {{post.author.lastname}}</span>
+                          </h2>
+                        </a>
+                      </div>
+                      <div class="fallowers">
+                        <a href=""><span>6 fallowers</span></a>
+                      </div>
+                      <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, impedit.</p>
+                      </div>
+                      <div class="fw">
+                        <span>
+                          <button type="button">fallow</button>
+                        </span>
+                        <div class="icon">
+                          <button type="button">
+                            <i class="fa-solid fa-envelope"></i>
+                          </button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+        </aside>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</html>

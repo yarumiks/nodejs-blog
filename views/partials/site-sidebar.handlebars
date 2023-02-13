@@ -1,0 +1,17 @@
+ <aside class="col-mdd-4" id="categories" >
+          <div class="container" >
+            <div class="categories-header">
+              <div class="c-name">
+                <p style="font-weight: 700;">Sizin için önemli olan şeylerin daha fazlaasını keşfedin</p>
+                 {{#each categories}}
+                <a href="/posts/category/{{_id}}">
+                  <div class="categorie">
+                    <p>{{name}}</p>
+                  </div>
+                </a>
+              {{/each}}
+            
+              </div>
+            </div>
+          </div>
+       </aside>

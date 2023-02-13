@@ -1,0 +1,46 @@
+<body>
+	<div>
+		<div class="add">
+			<div class="add-container">
+				<div class="add-content">
+					<h2 class="add">Üretmeye Hemen Başla</h2>
+					<form action="/posts/test" method="POST" enctype="multipart/form-data">
+						<div class="row">
+							<div class="offset-2 col-md-8 form">
+								<div class="form-group">
+									<input id="add" class="form-control" name="title" type="text" placeholder="Post başlıkğı"
+										required="required"
+										style=" position: relative;  top: 60px; left: -20rem; width: 600px;"
+										data-validation-required-message="lütfen başlık giriniz.">
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" name="content" placeholder="Post içeriği *"
+										required="required"
+										data-validation-required-message="lütfen içerik giriniz."></textarea>
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group">
+									 <select name="category" style="position: relative;display: flex; top: 500px;right: 320px; width: 600px;" class="form-control" id="">
+										{{#each categories}}
+                                              <option value="{{_id}}">{{name}}</option>
+										{{/each}}
+									 </select>
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="file" name="post_image" 
+									style=" position: relative;  top: 510px; left: -20rem; width: 600px;"
+									required="required" >
+								</div>
+							</div>
+							<div class="col-lg-12 text-center">
+								<div id="success"></div>
+								<button class="main-btn" type="submit">Post Ekle</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

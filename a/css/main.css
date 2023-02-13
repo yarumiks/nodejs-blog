@@ -41,7 +41,7 @@ li.nav-item {
     margin-right: 10px;
 }
 
-li.nav-item>button {
+li.nav-item> a>button {
     background-color: black;
     color: white;
     display: inline-block;
@@ -103,6 +103,10 @@ section.trending {
     border-bottom: 1px solid rgb(192, 188, 188);
 }
 
+.trending-container{
+    width: 1140px;
+    margin: auto;
+}
 div.card {
     border: none;
     margin-bottom: 28px;
@@ -124,15 +128,33 @@ h5.card-title {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 600;
+    color: black;
 }
 
 p.card-text {
     margin-left: -100px;
 }
 
+main.blog-page{
+  display: flex;
+  justify-content: center;
+  box-sizing: inherit;
+}
 section.blog {
-    box-sizing: inherit;
-    margin-bottom: 48px;
+    margin: 0 64px;
+    min-width: 0;
+    max-width: 1192px;
+    width: 100%;
+    display: flex;
+}
+
+div.blog-container{
+    display: grid;
+    grid-template-columns: repeat(8,1fr) repeat(4, minmax(48px, 1fr));
+    grid-template-rows: 1fr;
+    position: relative;
+    left: 50px;
+    
 }
 
 div.blog-person {
@@ -165,9 +187,10 @@ div.person-image {
 
 div.person-name h4 {
    display: flex;
-   width: 150px;
+   justify-content: space-around;
+   width: 120px;
     flex-direction: row;
-    margin-left: -15rem;
+    margin-left: -14.8rem;
     margin-bottom: 25vh;
     font-size: 18px;
 }
@@ -179,10 +202,11 @@ div.blog-name h2 {
  color: black;
  font-weight: 700;
  font-size: 25px;
+ bottom: -30px;
  width: 30rem;
- line-height: 10px;
- margin-left: -33rem;
- padding-top: 100px;
+ line-height: 20px;
+ margin-left: -31rem;
+ padding: 100px 0px 20px;
 }
 
 div.reading{
@@ -195,31 +219,52 @@ div.reading > h3 {
     font-size: 17px;
     margin-right: 18px;
     padding-top: 10px;
-    margin-left: -33rem;
+    margin-left: -31rem;
 }
 
-div.blog-img {
+.blog-img img {
    display: block;
+   width: 190px;
+   height: 160px;
    position: relative;
-   bottom: 9rem;
+   bottom: 11rem;
    left: -20px;
 }
 
-i.fa-heart {
+.material-symbols-outlined{
     display: block; 
     position: relative; 
-    left: -80px; 
-    top: -15px; 
-    font-size: 24px; 
-    cursor: pointer;
+    left: -70px; 
+    top: -30px; 
+    font-size: 32px; 
 }
 
+.material-symbols-outlined:hover , 
+.material-symbols-outlined:focus{
+  cursor: pointer;
+}
+
+.material-symbols-outlined:active{
+    transform: scale(0.97);
+}
+
+
+
+
+div .roww{
+    grid-column: 1 / span 7;
+    grid-row-start: 1;
+
+}
 aside#categories {
-   display: flex;
-   position: relative;
-   flex-flow: row wrap;
-   align-items: center;
-   justify-content: space-around;
+    grid-column: 9 / span 3;
+    grid-row-start: 1;
+    margin-top: 9rem;
+}
+
+#categories > .container {
+  position: sticky;
+  top: 107px;
 }
 
 div.categories-header {
@@ -285,3 +330,423 @@ button.to-top {
     text-decoration: none;
     transition: all .4s;
 }
+
+/* LOGİN CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Cabin:ital,wght@1,500&family=Gentium+Plus&family=Joan&family=Kdam+Thmor+Pro&family=Merriweather:ital,wght@1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Noto+Sans:wght@600&family=Playfair+Display:ital@1&family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+
+}
+
+div.login-container {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    width: 100%;
+    max-width: 160vh;
+    min-height: 90vh;
+    box-shadow:  rgb(0 0 0 / 15%) 0px 6px 12px;
+}
+
+
+div.login-content {
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.login-h2 {
+    position: relative;
+    top: -250px;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 2.6rem;
+    line-height: 1.6em;
+    left: 30px;
+}
+
+input#login-form {
+   border: none;
+   border-bottom: 1px solid rgb(71, 70, 70);
+   margin-bottom: 50px;
+    width: 400px;
+    height: 50px;
+    position: relative;
+    left: -130px;
+    bottom: 50px;
+    
+}
+
+input#login-form:focus{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+div.login-image {
+    position: relative;
+    visibility: visible;
+    top: -60px;
+}
+
+button.main-btn1 {
+   display: inline-block;
+   background-color: rgb(97, 97, 247);
+   color: aliceblue;
+   width: 120px;
+   height: 50px;
+   border-radius: 2px;
+   cursor: pointer;
+   border-color: rgb(114, 114, 244);
+   border-radius: 12px;
+   margin-left: -10rem;
+   margin-top: 20px;
+}
+
+button.main-btn1:hover {
+    background-color:  rgb(59, 59, 227);
+}
+
+
+/* REGİSTER CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Cabin:ital,wght@1,500&family=Gentium+Plus&family=Joan&family=Kdam+Thmor+Pro&family=Merriweather:ital,wght@1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Noto+Sans:wght@600&family=Playfair+Display:ital@1&family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+
+}
+
+div.register-container {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    width: 100%;
+    max-width: 160vh;
+    min-height: 90vh;
+    box-shadow:  rgb(0 0 0 / 15%) 0px 6px 12px;
+}
+
+div.register-content {
+    position: relative;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.register {
+    position: relative;
+    top: -230px;
+    left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    line-height: 1.4em;
+    left: 180px;
+}
+
+input#register {
+    border: none;
+    border-bottom: 1px solid rgb(71, 70, 70);
+     width: 350px;
+     height: 50px;
+     position: relative;
+     left: -140px;
+     bottom: 25px;
+     margin-bottom: 30px;
+     
+ }
+
+ input#register:focus{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+div.register-image {
+    position: relative;
+    top: -30px;
+    right: 18px;
+}
+
+div.register-image > figure {
+    height: 420px; 
+    max-width: 420px;
+    z-index: 111;
+}
+
+button.main-btn2 {
+    position: absolute;
+    background-color: rgb(97, 97, 247);
+    color: aliceblue;
+    width: 120px;
+    height: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+    border-color: rgb(114, 114, 244);
+    border-radius: 12px;
+    margin-left: -10rem;
+    margin-top: 4rem;
+ }
+
+ button.main-btn2:hover {
+    background-color:  rgb(59, 59, 227);
+}
+
+ a.login-link {
+    display: flex;
+    margin-left: 7rem;
+    margin-top: 15px;
+ }
+ 
+
+ /* ADDPOST */
+ 
+ * {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+
+}
+
+div.add-container {
+    display: block;
+    background-color: white;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 160px;
+    width: 100%;
+    max-width: 160vh;
+    min-height: 110vh;
+    box-shadow:  rgb(0 0 0 / 15%) 0px 6px 12px;
+}
+
+div.add-content {
+    position: relative;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.add {
+    position: relative;
+    top: -120px;
+    left: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    line-height: 1.4em;
+}
+
+input#add {
+    border: none;
+    border-bottom: 1px solid rgb(71, 70, 70);
+     width: 100px;
+     height: 50px;
+     position: relative;
+     left: -80px;
+     bottom: 25px;
+     margin-bottom: 30px;
+ }
+
+ textarea.form-control {
+    border: none;
+    border-bottom: 1px solid rgb(2, 2, 2);
+     width: 600px;
+     height: 400px;
+     position: absolute;
+     left: -299px;
+     top: 150px;
+     bottom: 25px;
+     margin-bottom: 30px;
+ }
+
+ input#add:focus{
+    border-bottom: 2px solid rgb(0, 0, 0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button.main-btn {
+    position: absolute;
+    background-color: rgb(97, 97, 247);
+    color: aliceblue;
+    width: 120px;
+    height: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+    border-color: rgb(114, 114, 244);
+    border-radius: 12px;
+    margin-left: -20rem;
+    margin-top: 32rem;
+ }
+
+ button.main-btn:hover {
+    background-color:  rgb(59, 59, 227);
+}
+
+ a.login-link {
+    display: flex;
+    margin-left: 7rem;
+    margin-top: 15px;
+ }
+ 
+ 
+
+
+
+ /* JOİN CSS */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
+/* JOİN */
+
+div.dialog {
+    animation: 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal forwards running k2;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 110vh;
+}
+
+div.dialog-container {
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 0;
+}
+
+div.join-container {
+    background: #ffffff;
+    box-shadow: rgb(0 0 0 / 15%) 0px 6px 12px;
+    width: 680px;
+    height: 90vh;
+    border-radius: 20px;
+    top: 30px;
+    position: relative;
+    display: block;
+}
+
+div.welcome {
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+
+div.join-content {
+    margin-top: 10rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    flex-direction: column;
+    width: 40rem;
+}
+
+h2.join{
+    position: relative;
+    top: 120px;
+    left: -8px;
+    letter-spacing: 0.9px;
+    line-height: 32px;
+    font-size: 29px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+div.google {
+    position: relative;
+    left: 5px;
+    font-family: 'Merriweather', serif;
+    width: 260px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 1.5em;
+    padding: 10px 15px 11px 18px;
+    font-size: 16px;
+    color:  rgb(66, 64, 64);
+    margin-bottom: 18px;
+}
+
+div.facebook {
+    position: relative;
+    left: 5px;
+    font-family: 'Merriweather', serif;
+    width: 260px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 1.5em;
+    padding: 10px 15px 11px 18px;
+    font-size: 16px;
+    color:  rgb(66, 64, 64);
+    margin-bottom: 18px;
+}
+
+div.email {
+    position: relative;
+    left: 5px;
+    font-family: 'Merriweather', serif;
+    width: 260px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 1.5em;
+    padding: 14px 15px 11px 18px;
+    font-size: 16px;
+    color: rgb(66, 64, 64);
+    margin-bottom: 18px;
+}
+
+div.google:hover, div.facebook:hover, div.email:hover {
+    border-color: rgb(63, 62, 62);
+}
+
+div.account {
+    font-size: 19px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(41, 41, 41, 1);   
+    margin-top: 25px;
+}
+
+div.account > p > a {
+    color: rgb(8, 101, 8)
+}
+
+div.warning > h4 {
+    display: block;
+   padding: 50px 0 10px 96px;
+  font-size: 13px;
+  color: rgba(117, 117, 117, 1);
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+div.close > button {
+    position: relative;
+    left: 39rem;
+    bottom:36rem;
+    width: 32px; 
+    height: 32px;
+    background-color: #ffffff;
+    border: 1px solid #ffff;
+    cursor: pointer;
+}
+
