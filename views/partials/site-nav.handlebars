@@ -2,26 +2,27 @@
   <nav class="navbar navbar-expand-lg navBar" id="navBar">
     <div class="container-fluid mv-100" style="height: 75px; background-color: aqua;">
       <a class="navbar-brand" style="color: black;" href="/">PROMİSE</a>
-      <button class="navbar-toggler w-25" type="button" style="height: 70px;" data-bs-toggle="collapse"
+      <button class="navbar-toggler w-25" id="open-menu-btn" type="button" style="height: 70px;" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
-        Menü <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
       </button>
+      <button id="close-menu-btn"><i class="fa-sharp fa-solid fa-xmark"></i></button>
       <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
         <ul class="navbar-nav me-2 mb-2 ml-auto w-50 ">
           <li class="nav-item">
-            <a class="home p-2 fs-2" aria-current="page" style="color: black;" href="/">ANA SAYFA</a>
+            <a class="home p-2 fs-2" aria-current="page" style="color: black; display:block" href="/">ANA SAYFA</a>
           </li>
           <li class="nav-item">
-            <a class="membership p-2" style="color: black;" href="/users/login">GİRİŞ</a>
+            <a class="membership p-2" style="color: black; display:block" href="/users/login">GİRİŞ</a>
           </li>
           <li class="nav-item">
-            <a class="write p-2" style="color: black;" href="/posts/uret">ÜRET</a>
+            <a class="write p-2" style="color: black; display:block;" href="/posts/uret">ÜRET</a>
           </li>
           <li class="nav-item">
-            <a class="sign-in p-2" style="color: black;" href="/users/register">KAYIT OL</a>
+            <a class="sign-in p-2" style="color: black; display:block" href="/users/register">KAYIT OL</a>
           </li>
           <li class="nav-item">
-            <a href="/join"><button type="button">oturum aç</button></a>
+            <a href="/join" style="display:block"><button type="button">oturum aç</button></a>
           </li>
         </ul>
       </div>
